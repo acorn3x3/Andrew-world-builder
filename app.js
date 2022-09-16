@@ -37,44 +37,45 @@ displayEnvironment();
 
 });
 
-territorySelect.addEventListener('change', () => {
-    environment.territory = territorySelect.value;
-    displayTerritory();
+//territorySelect.addEventListener('change', () => {
+    //environment.territory = territorySelect.value;
+   // displayTerritory();
     
     
-    });
+    //});
 
-citySelect.addEventListener('change', () => {
-        environment.city = citySelect.value;
-        displayCity();
+//citySelect.addEventListener('change', () => {
+        //environment.city = citySelect.value;
+       // displayCity();
         
         
-        });
+       // });
        
- championSelect.addEventListener('change', () => {
-            environment.champion = championSelect.value;
-            displayChampion();
+ //championSelect.addEventListener('change', () => {
+            //environment.champion = championSelect.value;
+           // displayChampion();
             
             
-            });
-            silverwingSelect.addEventListener('change', () => {
-                environment.silverwing = silverwingSelect.value;
-                displaySilverwing();
+           // });
+           // silverwingSelect.addEventListener('change', () => {
+                //environment.silverwing = silverwingSelect.value;
+               // displaySilverwing();
                 
                 
-                });
+                //}); 
 
 //
 function displayEnvironment() {
 
 
 
-    environmentHeader.textContent.value= environment.world;
+    environmentHeader.textContent = environment.world;
     territoryHeader.classList.value= environment.territory;
     cityHeader.classList.value= environment.city;
 
-    environmentHeader.src = 'assets/characters/' + environment.world + '.png';
+    environmentHeader.src = 'assets/' + environment.world + '.png';
 
 }
 //const addButton = document.getElementById('add-button');
 ;
+displayEnvironment();
