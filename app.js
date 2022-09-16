@@ -70,12 +70,11 @@ function displayEnvironment() {
 
 
     environmentHeader.textContent = environment.world;
-    territoryHeader.classList.value= environment.territory;
-    cityHeader.classList.value= environment.city;
+ 
 
     environmentHeader.src = 'assets/' + environment.world + '.png';
 
 }
 //const addButton = document.getElementById('add-button');
+displayEnvironment;
 ;
-displayEnvironment();
