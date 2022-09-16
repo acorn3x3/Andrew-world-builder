@@ -1,5 +1,5 @@
 
-const environmentHeader = document.getElementById('environment-header');
+const worldHeader = document.getElementById('environment-header');
 const territoryHeader = document.getElementById('territory-header');
 const cityHeader = document.getElementById('city-header');
 const championHeader = document.getElementById('champion-header');
@@ -22,11 +22,11 @@ const championSelect = document.getElementById('champion-select');
 const silverwingSelect = document.getElementById('silverwing-select');
 
 
-const worldImage = document.getElementById('world-select');
-const territoryImage = document.getElementById('territory-select');
-const cityImage = document.getElementById('city-select');
-const championImage = document.getElementById('champion-image');
-const silverwingImage = document.getElementById('silverwing-image');
+const worldImage = document.getElementById('enviroment-world');
+const territoryImage = document.getElementById('enviroment-territory');
+const cityImage = document.getElementById('enviroment-city');
+const championImage = document.getElementById('enviroment-champion');
+const silverwingImage = document.getElementById('enviroment-silverwing');
 
 
 
@@ -77,16 +77,16 @@ citySelect.addEventListener('change', () => {
 
 //
 function displayEnvironment() {
-    environmentHeader.textContent = environment.world;
+    worldHeader.textContent = environment.world;
     environmentWorld.src = 'assets/' + environment.world + '.png';
 
-    environmentTerrirtory.src = 'assets/' + environment.territory + '.png';
+    environmentTerritory.src = 'assets/' + environment.territory + '.png';
 
     environmentCity.src = 'assets/' + environment.city + '.png';
 
-    environmentWorld.src = 'assets/' + environment.world + '.png';
+    environmentChampion.src = 'assets/' + environment.champion + '.png';
 
-    environmentWorld.src = 'assets/' + environment.world + '.png';
+    environment.src = 'assets/' + environment.silverwing + '.png';
 
 }
 //const addButton = document.getElementById('add-button');
