@@ -2,7 +2,7 @@
 const environmentHeader = document.getElementById('environment-header');
 const territoryHeader = document.getElementById('territory-header');
 const cityHeader = document.getElementById('city-header');
-
+const environmentWorld = document.getElementById('environment-world');
 
 const worldSelect = document.getElementById('world-select'); 
 const territorySelect = document.getElementById('territory-select');
@@ -72,7 +72,7 @@ function displayEnvironment() {
     environmentHeader.textContent = environment.world;
  
 
-    environmentHeader.src = 'assets/' + environment.world + '.png';
+    environmentWorld.src = 'assets/' + environment.world + '.png';
 
 }
 //const addButton = document.getElementById('add-button');
