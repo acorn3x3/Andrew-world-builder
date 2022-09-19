@@ -31,26 +31,37 @@ let environment = {
 };
 
 worldSelect.addEventListener("change", () => {
+  console.log("here");
+  const nullselection = document.getElementById("worldselectblank");
+  if (nullselection) nullselection.remove();
   environment.world = worldSelect.value;
   displayEnvironment();
 });
 
 territorySelect.addEventListener("change", () => {
   environment.territory = territorySelect.value;
+  const nullselection = document.getElementById("territoryselectblank");
+  if (nullselection) nullselection.remove();
   displayEnvironment();
 });
 
 citySelect.addEventListener("change", () => {
   environment.city = citySelect.value;
+  const nullselection = document.getElementById("cityselectblank");
+  if (nullselection) nullselection.remove();
   displayEnvironment();
 });
 
 championSelect.addEventListener("change", () => {
   environment.champion = championSelect.value;
+  const nullselection = document.getElementById("championselectblank");
+  if (nullselection) nullselection.remove();
   displayEnvironment();
 });
 silverwingSelect.addEventListener("change", () => {
   environment.silverwing = silverwingSelect.value;
+  const nullselection = document.getElementById("silverwingselectblank");
+  if (nullselection) nullselection.remove();
   displayEnvironment();
 });
 
@@ -65,7 +76,7 @@ function displayEnvironment() {
 
   environmentChampion.src = "assets/" + environment.champion + ".png";
 
-  environment.src = "assets/" + environment.silverwing + ".png";
+  environmentSilverwing.src = "assets/" + environment.silverwing + ".png";
 }
 //const addButton = document.getElementById('add-button');
 displayEnvironment();
