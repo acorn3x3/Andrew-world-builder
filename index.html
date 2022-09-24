@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- metadata -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- title and favicon -->
+    <title>World Designer</title>
+    <link rel="icon" type="image/x-icon" href="assets/Legends_of_Runeterra_icon.png" />
+
+    <!-- js -->
+    <script type="module" src="app.js"></script>
+
+    <!-- fonts -->
+    <!-- see https://fonts.google.com/ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600&family=Titillium+Web:wght@200&display=swap"
+        rel="stylesheet">
+
+    <!-- css -->
+    <!-- link rel="stylesheet" href="styles/reset.css" -->
+    <!-- <link rel="stylesheet" href="styles/global.css" /> -->
+    <link rel="stylesheet" href="styles/world-builder.css" />
+    </head>
+    <body>
+        <header>
+            <img class="logo" src="assets/Runeterra-Logo.PNG" alt="logo">
+            <h1>World Designer</h1>
+        </header>
+
+        <main>
+            <section class="controls">
+                
+                <label>
+                    
+                World:
+                    <select id="world-select">
+                        
+                        <option value="" id="worldselectblank"></option>
+                        <option value="Celestial Realm">Celestial Realm</option>
+                        <option value="Spirit Realm">Spirit Realm</option>
+                        <option value="Runeterra">Runeterra</option>
+                        <option value="Time Portal">Time Portal</option>
+                        <option value="The Void">The Void</option>
+                        
+                    </select>
+                </label>
+                <label>
+                    Territory:
+                    <select id="territory-select">
+                        <option value="" id="territoryselectblank"></option>
+                        <option value="Demacia">Demacia</option>
+                        <option value="Noxus">Noxus</option>
+                        <option value="Shurima">Shurima</option>
+                        <option value="Ionia">Ionia</option>
+                        <option value="Freiljord">Ionia</option>
+                        <option value="Piltover">Ionia</option>
+                        <option value="Zaun">Ionia</option>
+                        <option value="Shadow Isles">Ionia</option>
+                        <option value="The Void">Void</option>
+                    </select>
+                </label>
+                    City:
+                    <select id="city-select">
+                        <option value="" id="cityselectblank"></option>
+                        <option value="shurima-city">Shurima</option>
+                        <option value="noxus-city">Noxus</option>
+                        <option value="demacia-city">Demacia</option>
+                        <option value="ionia-city">The Placidium of Navori</option>
+                        <option value="piltover-city">Piltover</option>
+                        <option value="zaun-city">Zaun</option>
+                        <option value="bilgewater-city">Bilgewater</option>
+                        <option value="shadow-isles0city">Shadow Isles</option>
+                        <option value="howling-abyss-city">Freiljord</option>
+                        <option value="void-city">Void</option>
+                    </select>
+                </label>
+                <label>
+                    Champion:
+                        <select id="champion-select">
+                            <option value="" id="championselectblank"></option>
+                            <option value="Garen0">Garen</option>
+                            <option value="Garen1">Garen</option>
+                            <option value="Garen2">Garen</option>
+                            <option value="Garen3">Garen</option>
+                            <option value="Garen4">Garen</option>
+                            <option value="Garen5">Garen</option>
+                            <option value="Garen6">Garen</option>
+                            <option value="Garen7">Garen</option>
+                            <option value="Garen8">Garen</option>
+                            <option value="Garen9">Garen</option>
+                        </select>
+                </label>
+                <label>
+                    Silverwing:
+                        <select id="silverwing-select">
+                        <option value="" id="silverwingselectblank"></option>
+                        <option value="silverwing-bilgewater">Silverwing Bilgewater</option>
+                        <option value="silverwing-demacia">Silverwing Demacia</option>
+                        <option value="silverwing-piltover">Silverwing Piltover</option>
+                        <option value="silverwing-shadow-isles">Silverwing Shadow Isles</option>
+                        <option value="silverwing-targon">Silverwing Targon</option>
+
+
+
+                    </select>
+                </label>
+            </section>
+<section>
+                    <h1 id="world-header"></h1>
+                    <h1 id="territory-header"></h1>
+                    <h1 id="city-header"></h1>
+                    <h1 id="champion-header"></h1>
+                    <h1 id="silverwing-header"></h1>
+</section>      
+<section>                  
+                    <img id="environment-world" src="" alt="world"> 
+                    <img id="environment-territory" src="assets/Runeterra-Logo.png" alt="territory"> 
+                    <img id="environment-city" src="assets/Runeterra-Logo.png" alt="city"> 
+                    <img id="environment-champion" src="assets/Runeterra-Logo.png" alt="champion">
+                    <img id="environment-silverwing" src="assets/Runeterra-Logo.png" alt="silverwing">  
+</section>
+        </body>
+</html>
+
+
